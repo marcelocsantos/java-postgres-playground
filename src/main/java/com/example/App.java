@@ -4,6 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import com.example.model.Marca;
+import com.example.model.Produto;
+
 public class App {
     private static final String PASSWORD = "";
     private static final String USERNAME = "gitpod";
@@ -30,8 +33,8 @@ public class App {
             produto.setValor(5);
 
             //inserirProduto(conn, produto);
-            excluirProduto(conn, 201);
-            listarDadosTabela(conn, "produto");
+            //excluirProduto(conn, 201);
+            //listarDadosTabela(conn, "produto");
             
         } catch (SQLException e) {
             System.err.println("Não foi possível conectar ao banco de dados: " + e.getMessage());
